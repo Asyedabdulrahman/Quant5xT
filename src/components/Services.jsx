@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import servicesBackground from "../assets/marquee/servicesBackgroundPNG.Png";
+// import servicesBackground from "../assets/marquee/servicesBackgroundPNG.png";
 import ShimmerButtonDemo from "./ShimmerButtonDemo";
 import star2 from "../assets/marquee/Star 2.png";
 
@@ -236,11 +236,11 @@ const Services = () => {
 
         {/* last image section */}
         <div className="relative w-screen left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
-          <img
-            src={servicesBackground}
+          {/* <img
+            // src={servicesBackground}
             alt="servicesBackground"
             className="w-full object-cover h-[60vh]" // Adjust height as needed
-          />
+          /> */}
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 max-w-4xl mx-auto z-10">
             <h1 className="text-4xl sm:text-6xl font-light mb-6">
               Build for <span className="font-bold">Startups</span>
