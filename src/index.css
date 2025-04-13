@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: 'Giga Sans';
+  src: url('/src/assets/fonts/giga-sans/Locomotype\ \ GigaSansExtraLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Giga Sans';
+  src: url("../public/fonts/giga-sans/LocomotypeGigaSansLight.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Giga Sans';
+  src: url('/src/assets/fonts/GigaSans-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica'), local('Arial');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* .floating-circle {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, #E7A921 0%, #E7A92133 70%, #E7A92100 100%);
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.3;
+  animation: floatAnimation 30s infinite ease-in-out;
+  mix-blend-mode: screen;
+  top: -100px;
+  left: -100px;
+  box-shadow: 0 0 120px #E7A92166;
+  z-index: 1;
+} */
+
+.floating-circle {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, #ffae00 0%, #E7A92133 90%, #E7A92100 100%);
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.3;
+  animation: floatAnimation 30s infinite ease-in-out;
+  mix-blend-mode: screen;
+  top: -100px;
+  left: -100px;
+  box-shadow: 0 0 120px #E7A92166;
+  z-index: 100000;
+}
+
+
+.purple-radial {
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  background: radial-gradient(circle, rgba(85, 0, 84, 0.9) 0%, rgba(85, 0, 84, 0.4) 60%, rgba(85, 0, 84, 0) 100%);
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.95;
+  animation: purpleFloatAnimation 75s infinite ease-in-out;
+  mix-blend-mode: screen;
+  bottom: -200px;
+  right: -200px;
+  box-shadow: 0 0 200px rgba(85, 0, 84, 0.6);
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translate(-20%, -10%) scale(1);
+    filter: blur(75px);
+  }
+  33% {
+    transform: translate(50%, 80%) scale(1.2);
+    filter: blur(85px);
+  }
+  66% {
+    transform: translate(150%, -10%) scale(1.1);
+    filter: blur(80px);
+  }
+  100% {
+    transform: translate(-20%, -10%) scale(1);
+    filter: blur(75px);
+  }
+}
+
+@keyframes purpleFloatAnimation {
+  0% {
+    transform: translate(-50%, 20%) scale(1);
+  }
+  25% {
+    transform: translate(-30%, -40%) scale(1.2);
+  }
+  60% {
+    transform: translate(80%, 10%) scale(0.9);
+  }
+  100% {
+    transform: translate(-50%, 20%) scale(1);
+  }
+}
+
+@keyframes wordSlide {
+  0%, 100% { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10%, 30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.animate-wordSlide {
+  animation: wordSlide 2s ease-in-out infinite;
+}
+
+
+@keyframes simpleFade {
+  0% , 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-simpleFade {
+  animation : simpleFade 10s ease-in-out infinite;
+}
+
+/* Animation for shimmer button */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add this to ensure the animation is smooth */
+*  {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes moveStar {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
