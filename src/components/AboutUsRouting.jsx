@@ -156,24 +156,24 @@ function AboutUsRouting() {
         </section>
 
         {/* Info Sections */}
-        <section className="relative mt-32 space-y-28">
+        <section className="relative mt-32 space-y-40">
           {/* Vertical Connector Line */}
-          <div className="absolute top-[6rem] left-1/2 transform -translate-x-1/2 h-[90%] w-[2px] bg-gray-700 z-0"></div>
+          {/* <div className="absolute top-[6rem] left-1/2 transform -translate-x-1/2 h-[90%] w-[2px] bg-gray-700 z-0"></div> */}
 
           {/* 1: What We Do */}
-          <div className="relative z-10 grid md:grid-cols-2 gap-10 items-center">
-            <div className="text-left space-y-4">
-              <p className="inline-flex items-center gap-2 bg-[#3D3D3D] text-white rounded-full px-6 py-2 w-fit mb-6 md:mb-10">
+          <div className="relative z-10 flex flex-col md:flex-row items-center gap-10">
+            <div className="w-[60%] space-y-4">
+              <p className="inline-flex items-center gap-2 bg-[#3D3D3D] text-white rounded-full px-6 py-2 w-fit mb-4 md:mb-6">
                 <img
                   src={star2}
                   alt="star"
-                  className="w-4 h-4 object-center relative top-[1px]"
+                  className="w-6 h-6 object-center relative top-[1px]"
                 />
                 <span className="font-giga pt-[6px] leading-none">
                   What We Do
                 </span>
               </p>
-              <p className="text-3xl text-gray-200 leading-relaxed">
+              <p className="text-3xl text-gray-200 leading-snug">
                 We craft smart, scalable, and future-ready solutions that drive
                 real change. From SaaS product development and conversational AI
                 to IoT ecosystems and AI automation agents, our work empowers
@@ -181,43 +181,43 @@ function AboutUsRouting() {
               </p>
             </div>
             <img
-              src={contact1}
+              src={contact3}
               alt="Abstract 1"
-              className="rounded-xl w-full shadow-lg"
+              className="w-[40%] rounded-xl shadow-lg"
             />
           </div>
 
           {/* 2: Why We Exist */}
-          <div className="relative z-10 grid md:grid-cols-2 gap-10 items-center">
-            <img
-              src={contact2}
-              alt="Abstract 2"
-              className="rounded-xl w-full shadow-lg"
-            />
-            <div className="text-left space-y-4">
-              <p className="inline-flex items-center gap-2 bg-[#3D3D3D] text-white rounded-full px-6 py-2 w-fit mb-6 md:mb-10">
+          <div className="relative z-10 flex flex-col md:flex-row-reverse items-center gap-10">
+            <div className="w-[60%] space-y-4">
+              <p className="inline-flex items-center gap-2 bg-[#3D3D3D] text-white rounded-full px-6 py-2 w-fit mb-4 md:mb-6">
                 <img
                   src={star2}
                   alt="star"
                   className="w-4 h-4 object-center relative top-[1px]"
                 />
                 <span className="font-giga pt-[6px] leading-none">
-                  Why we Exist
+                  Why We Exist
                 </span>
               </p>
-              <p className="text-3xl text-gray-200 leading-relaxed">
+              <p className="text-3xl text-gray-200 leading-snug">
                 Because the world is moving fast—and we believe our clients
                 should lead the race, not just keep up. Whether you're a startup
                 chasing disruption or an enterprise evolving at scale, we’re
                 here to engineer your leap forward.
               </p>
             </div>
+            <img
+              src={contact1}
+              alt="Abstract 2"
+              className="w-[40%] rounded-xl shadow-lg"
+            />
           </div>
 
           {/* 3: Our Approach */}
-          <div className="relative z-10 grid md:grid-cols-2 gap-10 items-center">
-            <div className="text-left space-y-4">
-              <p className="inline-flex items-center gap-2 bg-[#3D3D3D] text-white rounded-full px-6 py-2 w-fit mb-6 md:mb-10">
+          <div className="relative z-10 flex flex-col md:flex-row items-center gap-10">
+            <div className="w-[60%] space-y-4">
+              <p className="inline-flex items-center gap-2 bg-[#3D3D3D] text-white rounded-full px-6 py-2 w-fit mb-4 md:mb-6">
                 <img
                   src={star2}
                   alt="star"
@@ -227,31 +227,27 @@ function AboutUsRouting() {
                   Our Approach
                 </span>
               </p>
-              <p className="text-3xl text-gray-200 leading-relaxed">
+              <p className="text-3xl text-gray-200 leading-snug">
                 We combine deep technical expertise with creative thinking.
                 Every solution we build is tailored, data-driven, and designed
                 to elevate your business to its next frontier.
               </p>
             </div>
             <img
-              src={contact3}
+              src={contact2}
               alt="Abstract 3"
-              className="rounded-xl w-full shadow-lg"
+              className="w-[40%] rounded-xl shadow-lg"
             />
           </div>
         </section>
 
         {/* Who We Work With Section */}
-
-        <section className="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen h-screen flex items-center justify-center overflow-hidden mt-40">
-          {/* Starfield background effect */}
+        <section className="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen h-screen flex items-center justify-center overflow-hidden mt-24">
           <img
             src={background}
             alt="Background"
-            className="absolute inset-0 w-full h-full object-cover  z-0"
+            className="absolute inset-0 w-full h-full object-cover z-0"
           />
-
-          {/* Main content */}
           <div className="z-10 text-center px-4 max-w-4xl">
             <h1 className="text-4xl sm:text-5xl font-light mb-6">
               Who We Work With
@@ -272,6 +268,7 @@ function AboutUsRouting() {
             </p>
           </div>
         </section>
+
         <Cta />
         <div className="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
           <Footer bgColor={"bg-black"} textColor={"text-white"} />

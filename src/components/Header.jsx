@@ -66,7 +66,7 @@ const Header = ({ headersvg, textColor, logoSize }) => {
             },
             {
               name: "Services",
-              link: "/",
+              link: "/Services",
             },
             {
               name: "About Us",
